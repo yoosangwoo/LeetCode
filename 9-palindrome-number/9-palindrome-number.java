@@ -3,9 +3,9 @@ class Solution {
         
         int answer = 0;// 저장할 변수 선언
         
-        if(x==0){ // x가 0 이거나 음수면 false
+        if(x==0){ // x가 0이면 true
             return true;   
-        } else if(x<0 || x%10==0 ){
+        } else if(x<0 || x%10==0 ){ // x가 음수거나 0으로 끝나면 false
             return false;
         }        
         
@@ -19,7 +19,7 @@ class Solution {
 
         }
         
-        // x와 변수값 비교해서 맞으면 true, 아니면 false
+        // x와 변수값 비교해서 같거나 또는 answer에 저장한 변수의 10으로 나눈 값과 같다면 true, 아니면 false
         if(x == answer || x == answer/10){
             return true;
         } else {
